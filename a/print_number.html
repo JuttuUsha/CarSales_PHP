@@ -1,0 +1,46 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title></title> 
+  </head> 
+  <body>
+  <H1></H1>
+
+  <form>
+	    Please input a number:	<input type="text" name="numberfield"> </label> 
+		
+		<input type="button" value="Calculate" onclick="printNumber(numberfield.value);" />
+  </form>
+  
+
+  
+  <script>
+  function printNumber(number)
+  {
+	
+	temp = number;
+	document.write(temp+"<br/>");	
+	while(temp--)
+	{
+		if(temp==0)
+		{
+			break;
+		}
+		
+		if(number%temp==0 && temp!=number && temp!=1)
+		{
+			continue;				
+		}				
+		
+		document.write(temp+"<br/>");	
+		
+	}
+	return;
+  }
+  </script>
+  
+  </body> 
+
+
+
+
+</HTML>
